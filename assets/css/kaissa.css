@@ -1,0 +1,32 @@
+.nav-list > li > a {
+  color: #0F2F7A;
+}
+
+.nav-list > .active > a, .nav-list > .active > a:hover {
+  background-color: #DBAE27;
+}
+
+#logo {
+  margin: 1em 0;
+}
+
+html, body {
+  height: 100%
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+#content {
+  overflow: auto;
+  padding-bottom: 20px;
+}
+
+footer {
+  position: relative;
+  margin-top: -100px;
+  height: 20px;
+  clear:both;
+  padding-top:0px;
+}
