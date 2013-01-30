@@ -38,3 +38,18 @@ var loadMap = function() {
 
   google.maps.event.addListener(map, 'click', function() { console.log(map.getBounds()); });
 }
+
+var sendMessage = function(formId) {
+}
+
+var resetForm = function(formId) {
+  var form = $('#'+formId);
+  var inputs = form.find('input');
+  var textareas = form.find('textarea');
+  for (var i=0; i<inputs.length; i++) {
+    $(inputs[i]).val('');
+  }
+  for (var i=0; i<inputs.length; i++) {
+    $(inputs[i]).val('');
+  }
+}

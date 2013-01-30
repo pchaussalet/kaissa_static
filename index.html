@@ -19,9 +19,6 @@
     </style>
     <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
 
-    <script type="text/javascript"
-      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCXczCdP6Aet_9oDSHHbHTD6tQypybqiIs&sensor=true">
-    </script>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -109,21 +106,25 @@
             </div><!--/span-->
           </div><!--/row-->
             <div class="row-fluid" id="contact" style="display:none;">
-            <div class="span4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="#">View details »</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="#">View details »</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="#">View details »</a></p>
-            </div><!--/span-->
+              <div class="span12">
+                <h2>Nous contacter</h2>
+                <p>Pour un devis, une information ou une suggestion, n'hésitez pas à nous écrire.</p>
+                <form id="contact_form">
+                  <h3>Vous</h3>
+                  <label>Nom</label>
+                  <input type="text" placeholder="Votre nom" name="nom"/>
+                  <label>E-mail</label>
+                  <input type="email" placeholder="Votre adresse e-mail" name="email"/>
+                  <h3>Votre message</h3>
+                  <label>Sujet</label>
+                  <input type="text" placeholder="Sujet de votre message" name="sujet"/>
+                  <label>Message</label>
+                  <textarea rows="5" placeholder="Votre message" name="message" style="width: 50%"></textarea>
+                </form>
+                <button class="btn btn-primary" onclick="sendMessage('contact_form')">Envoyer</button>
+                <button class="btn" onclick="resetForm('contact_form')">Réinitialiser</button>
+              </div>
+            </div>
           </div><!--/row-->
        </div><!--/span-->
       </div><!--/row-->
@@ -154,5 +155,7 @@
     <script src="assets/js/bootstrap-typeahead.js"></script>
 
     <script src="assets/js/kaissa-static.js"></script>
+
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCXczCdP6Aet_9oDSHHbHTD6tQypybqiIs&sensor=true"></script>
 
 </body><style type="text/css"></style></html>
